@@ -4,60 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <androidx.cardview.widget.CardView
         android:layout_width="300dp"
         android:layout_height="300dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="#3F51B5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         >
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_image"
+                android:id="@+id/CatagoryImage"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:background="@color/black"
-                app:civ_border_color="#FF000000"
-                app:civ_border_width="2dp"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/editTextText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="8dp"
-                android:ems="10"
-                android:inputType="text"
-                android:text="@string/enter_catagory_name"
-
-                android:textColorHint="@color/white"
-                android:textColor="@color/white"
-
-                app:layout_constraintTop_toBottomOf="@+id/profile_image"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/addBtn"
+                android:background="@color/black"
                 />
-
-            <Button
-                android:id="@+id/addBtn"
+            <EditText
+                android:id="@+id/CatagoryName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:hint="Enter Catagory Name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/CatagoryImage"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/AddCatagorybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Catagory"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/CatagoryName"
+                app:layout_constraintStart_toStartOf="@id/CatagoryName"
+                app:layout_constraintEnd_toEndOf="@id/CatagoryName"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginTop="8dp"
                 />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
