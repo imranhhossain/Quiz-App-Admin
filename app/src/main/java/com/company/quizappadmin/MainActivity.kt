@@ -12,6 +12,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //this is a new feature (dropdown)
         //this is a new feature (Button)
-        //this is a new feature (Button2)
+        //this is a new feature (dropdown)
     }
 }
