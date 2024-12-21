@@ -13,5 +13,6 @@ class MainActivity : AppCompatActivity() {
         //this is a new feature (dropdown)
         //this is a new feature (Button)
         //this is a new feature (dropdown)
+        //this is a new feature (navbar)
     }
 }
